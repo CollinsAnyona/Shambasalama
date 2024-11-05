@@ -1,0 +1,102 @@
+/* New theme colors */
+:root {
+    --farm-green: #6B8E23; /* Earthy Green */
+    --farm-brown: #8B4513; /* Warm Brown */
+    --farm-beige: #F5F5DC; /* Light Beige */
+    --ivory-white: #FFFFF0; /* Ivory White */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: var(--farm-green) !important;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.navbar-brand,
+.nav-link {
+    color: var(--ivory-white) !important;
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.nav-link:hover {
+    color: var(--farm-brown) !important;
+}
+
+/* Header styling */
+header {
+    background-color: var(--farm-beige);
+    color: var(--farm-brown);
+    padding: 50px 0;
+    text-align: center;
+}
+
+header .btn-primary {
+    background-color: var(--farm-green);
+    border-color: var(--farm-green);
+    color: var(--ivory-white);
+    font-weight: bold;
+}
+
+header .btn-primary:hover {
+    background-color: var(--farm-brown);
+    border-color: var(--farm-brown);
+}
+
+/* Section background */
+section {
+    padding: 60px 0;
+}
+
+/* Features Section */
+#features .card {
+    border: none;
+    background-color: var(--ivory-white);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+}
+
+#features .card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title {
+    color: var(--farm-green);
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact {
+    background-color: var(--farm-beige);
+    border-top: 5px solid var(--farm-green);
+    padding: 40px;
+}
+
+.form-control {
+    border-color: var(--farm-green);
+}
+
+.btn-primary {
+    background-color: var(--farm-green);
+    border-color: var(--farm-green);
+    color: var(--ivory-white);
+}
+
+.btn-primary:hover {
+    background-color: var(--farm-brown);
+    border-color: var(--farm-brown);
+}
+
+/* Footer styling */
+footer {
+    background-color: var(--farm-green);
+    color: var(--ivory-white);
+    padding: 15px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9em;
+}
+
