@@ -6,6 +6,7 @@
     <title>Shamba Salama</title>
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -25,10 +26,13 @@
                 <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#contact">Contact</a>
+                <a class="nav-link" href="weather.html">Weather Updates</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="login.html"><i class="fas fa-user"></i>Sign Up/Login</a>
             </li>
         </ul>
     </div>
@@ -99,9 +103,46 @@
 </section>
 
 <!-- Footer -->
-<footer class="text-center">
-    <p>&copy; 2024 Shamba Salama. All Rights Reserved.</p>
+<footer>
+    <div class="container">
+        <div class="row text-center text-md-left">
+            <!-- About Shamba Salama -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">About Shamba Salama</h5>
+                <p>Shamba Salama is your trusted partner in agriculture, empowering farmers with real-time weather updates, crop management tips, and market insights to boost productivity and ensure sustainable farming practices.</p>
+            </div>
+            <!-- Quick Links -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Quick Links</h5>
+                <ul class="list-unstyled">
+                    <li><a href="#home" class="footer-link">Home</a></li>
+                    <li><a href="#features" class="footer-link">Features</a></li>
+                    <li><a href="weather.html" class="footer-link">Weather Updates</a></li>
+                    <li><a href="#contact" class="footer-link">Contact Us</a></li>
+                </ul>
+            </div>
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5 class="text-uppercase">Contact Us</h5>
+                <ul class="list-unstyled">
+                    <li><i class="fas fa-envelope"></i> info@shambasalama.com</li>
+                    <li><i class="fas fa-phone"></i> +254 740308007</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Nairobi, Kenya</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#" class="footer-link"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="footer-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="footer-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <hr class="footer-divider">
+        <div class="text-center">
+            <p class="mb-0">&copy; 2024 Shamba Salama. All Rights Reserved.</p>
+        </div>
+    </div>
 </footer>
+
 
 <!-- Bootstrap JS and Dependencies -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
