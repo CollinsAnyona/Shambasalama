@@ -13,7 +13,9 @@
 
 <!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark">
-    <a class="navbar-brand" href="#">Shamba Salama</a>
+    <a class="navbar-brand" href="#">
+        <img src="Shamba_Salama_logo-removebg-preview.png" alt="Shamba Salama Logo" class="logo">
+    </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -26,13 +28,10 @@
                 <a class="nav-link" href="#features">Features</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="weather.html">Weather Updates</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="#About">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="login.html"><i class="fas fa-user"></i>Sign Up/Login</a>
+                <a class="nav-link" href="signin.html"><i class="fas fa-user"></i></a>
             </li>
         </ul>
     </div>
@@ -55,7 +54,9 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Crop Management</h5>
+                        <h5 class="card-title">
+                            <a class="card-title" id="weather" href="tips.html">Crop Management Tips</a>
+                        </h5>
                         <p class="card-text">Get tailored tips on crop management based on your location and needs.</p>
                     </div>
                 </div>
@@ -63,7 +64,9 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Weather Updates</h5>
+                        <h5 class="card-title">
+                            <a class="card-title" id="weather" href="weather.html">Weather Updates</a>
+                        </h5>
                         <p class="card-text">Stay up-to-date with real-time weather information to optimize your farming.</p>
                     </div>
                 </div>
@@ -71,7 +74,8 @@
             <div class="col-md-4">
                 <div class="card mb-4">
                     <div class="card-body">
-                        <h5 class="card-title">Market Information</h5>
+                        <h5 class="card-title">
+                            <a class="card-title" id="weather" href="market.html">Market Information</a></h5>
                         <p class="card-text">Access market prices and trends to make informed selling decisions.</p>
                     </div>
                 </div>
@@ -100,6 +104,17 @@
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
+</section>
+
+<section>
+    <div id="popup-ad" class="popup">
+        <div class="popup-content">
+          <span id="close-popup" class="close-btn">&times;</span>
+          <h2>Special Offer!</h2>
+          <p>Get 20% off on premium features. Limited time offer!</p>
+          <a href="#" class="cta-button">Learn More</a>
+        </div>
+      </div>      
 </section>
 
 <!-- Footer -->

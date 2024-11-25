@@ -11,6 +11,7 @@ const cors = require('cors');
 // Middleware	
 app.use(bodyParser.json());
 app.use(cors());
+app.use(express.json())
 
 // Database
 const db = new sqlite3.Database(':memory:');
@@ -149,6 +150,49 @@ app.post('/api/post-produce', (req, res) => {
             res.status(201).json({ message: 'Produce posted successfully.' });
         }
     );
+});
+
+// Sample data for buyers and farmers
+const buyers = [
+    { id: 1, name: "John Doe", location: "Nairobi", crop: "Maize", quantity: 100, priceRange: [30, 50] },
+    { id: 2, name: "Jane Smith", location: "Kisumu", crop: "Tomatoes", quantity: 200, priceRange: [40, 60] }
+];
+
+const farmers = [
+    { id: 1, name: "Onyango", location: "Kisumu", crop: "Tomatoes", quantity: 150, price: 45 },
+    { id: 2, name: "Mwangi", location: "Nairobi", crop: "Maize", quantity: 80, price: 35 }
+];
+
+// Matching algorithm
+app.get('/match', (req, res) => {
+    const matches = [];
+    buyers.forEach(buyer => {
+        farmers.forEach(farmer => {
+            if (
+                buyer.crop === farmer.crop &&
+                buyer.quantity <= farmer.quantity &&
+                buyer.priceRange[0] <= farmer.price &&
+                buyer.priceRange[1] >= farmer.price &&
+                buyer.location === farmer.location
+            ) {
+                matches.push({ buyer, farmer });
+            }
+        });
+    });
+    res.json(matches);
+});
+
+// Simple chat endpoint for demonstration
+let messages = [];
+
+app.post('/send-message', (req, res) => {
+    const { sender, recipient, content } = req.body;
+    messages.push({ sender, recipient, content, timestamp: new Date() });
+    res.json({ status: 'Message sent!', messages });
+});
+
+app.get('/messages', (req, res) => {
+    res.json(messages);
 });
 
 app.listen(port, () => {

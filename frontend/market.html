@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Shamba Salama Market Feature helps farmers connect with buyers and check market prices.">
+  <title>Shamba Salama - Marketplace</title>
+  <link rel="stylesheet" href="market.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <h1>Shamba Salama Marketplace</h1>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#market-prices">Market Prices</a></li>
+          <li><a href="#post-produce">Post Produce</a></li>
+          <li><a href="#buyers">Buyers & Sellers</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <div class="hero-content">
+        <h2>Connect. Trade. Thrive.</h2>
+        <p>Empowering farmers to connect with buyers for a sustainable agricultural economy.</p>
+        <button class="cta-button">Explore Marketplace</button>
+      </div>
+      <img src="farmer-market.jpg" alt="Farmers Market" class="hero-image">
+    </section>
+
+    <section id="market-prices" class="market-section">
+      <h2>Current Market Prices</h2>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Crop</th>
+              <th>Price (per kg)</th>
+              <th>Market</th>
+            </tr>
+          </thead>
+          <tbody id="prices-table">
+            <!-- Data dynamically loaded -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="post-produce" class="form-section">
+      <h2>Post Your Produce</h2>
+      <form id="produce-form">
+        <div class="form-group">
+          <label for="crop-name">Crop Name:</label>
+          <input type="text" id="crop-name" placeholder="e.g., Maize" required>
+        </div>
+        <div class="form-group">
+          <label for="quantity">Quantity (kg):</label>
+          <input type="number" id="quantity" placeholder="e.g., 50" required>
+        </div>
+        <div class="form-group">
+          <label for="location">Your Location:</label>
+          <input type="text" id="location" placeholder="e.g., Kisumu" required>
+        </div>
+        <button type="submit" class="submit-button">Post Produce</button>
+      </form>
+      <div id="post-success" class="hidden">Produce posted successfully!</div>
+    </section>
+
+    <section id="buyers" class="buyers-section">
+      <h2>Connect with Buyers & Sellers</h2>
+      <div class="chat-dashboard">
+        <ul id="buyers-list">
+          <!-- Buyers & sellers dynamically loaded -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>© 2024 Shamba Salama. Empowering Farmers. Building Connections.</p>
+  </footer>
+
+  <script src="market.js"></script>
+</body>
+</html>

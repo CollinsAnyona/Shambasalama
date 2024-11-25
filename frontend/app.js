@@ -9,6 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+
 function myMenuFunction() {
     var i = document.getElementById("navMenu");
 
@@ -41,3 +42,26 @@ function register() {
     x.style.opacity = 0;
     y.style.opacity = 1;
 }
+
+document.addEventListener('DOMContentLoaded', () => {
+    const popup = document.getElementById('popup-ad');
+    const closeBtn = document.getElementById('close-popup');
+  
+    // Show the popup after a delay
+    setTimeout(() => {
+      popup.style.display = 'flex';
+    }, 5000); // Show after 5 seconds
+  
+    // Close the popup when the close button is clicked
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+  
+    // Close the popup when clicking outside the content
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+  });
+  
