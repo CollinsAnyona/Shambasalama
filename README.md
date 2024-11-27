@@ -1,6 +1,6 @@
 ---
 
-# Shamba Salama 🌱  
+# Shamba Salama 
 
 **Shamba Salama** is a user-friendly web application designed to empower farmers with tools, resources, and insights for better agricultural practices. It provides essential features such as weather forecasts, market prices, tips on sustainable farming, and a platform for messaging and collaboration.
 
